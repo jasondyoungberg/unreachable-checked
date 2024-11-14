@@ -14,14 +14,14 @@ macro_rules! unreachable_checked {
     () => {{
         extern "Rust" {
             #[link_name = concat!(
-                                    "\n\n\n",
-                                    "ERROR: unreachable_checked!() not optimized out at ",
-                                    file!(),
-                                    ":",
-                                    line!(),
-                                    ":",
-                                    column!(),
-                                    "\n\n\n")]
+                    "\n\n\n",
+                    "ERROR: unreachable_checked!() not optimized out at ",
+                    file!(),
+                    ":",
+                    line!(),
+                    ":",
+                    column!(),
+                    "\n\n\n")]
             fn check() -> !;
         }
         unsafe { check() };
