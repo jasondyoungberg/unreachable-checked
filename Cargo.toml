@@ -2,5 +2,9 @@
 name = "unreachable-checked"
 version = "0.1.0"
 edition = "2021"
+description = "Use the optimizer to prove code unreachable"
+repository = "https://github.com/jasondyoungberg/unreachable-checked"
+license = "MIT"
+readme = "README.md"
 
 [dependencies]
